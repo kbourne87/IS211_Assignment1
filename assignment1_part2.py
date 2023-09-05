@@ -1,11 +1,13 @@
+class Book():
+    def __init__(self, title, author):
+        self.author = author
+        self.title = title
 
-class Book:
-    def __init__(self, author, title):
-        pass
-    
     def display(self):
-        pass
+        print(self.title + ", written by " + self.author)
 
+ob1 = Book("Harry Potter and the Goblet of Fire", "J.K. Rowling")
+ob1.display()
 
-if __name__ == "__main__":
-    pass
+ob2 = Book("Ivanhoe: A Romance", "Walter Scott")
+ob2.display()
